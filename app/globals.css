@@ -1,0 +1,66 @@
+/*
+ * Global styles for the speaker website.
+ * This file imports Tailwind’s base, component and utility layers
+ * and defines CSS variables for the custom design system.
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens defined in HSL. Tailwind will reference these via the
+   color functions defined in tailwind.config.ts. */
+:root {
+  --brand: 215 35% 40%; /* primary brand hue */
+  --muted: 210 20% 96%; /* light background */
+  --accent: 21 85% 55%; /* call‑to‑action accent */
+  --ring: 215 20% 50%; /* focus ring color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand: 215 35% 60%;
+    --muted: 215 15% 15%;
+    --accent: 21 90% 60%;
+    --ring: 215 20% 70%;
+  }
+}
+
+/* Base typography and layout resets */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-muted text-gray-800 dark:text-gray-100 font-sans antialiased leading-relaxed;
+}
+
+a {
+  @apply text-brand hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold text-gray-900 dark:text-gray-100;
+}
+
+/* Skip‑to‑content link styling */
+.skip-link {
+  @apply absolute left-4 top-2 -translate-y-full bg-brand text-white px-4 py-2 rounded-md shadow-subtle transition-transform;
+}
+
+.skip-link:focus {
+  @apply translate-y-0;
+}
+
+/* Utility class for visually hidden elements (for accessibility) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
