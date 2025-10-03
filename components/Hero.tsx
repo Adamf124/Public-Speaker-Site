@@ -3,13 +3,17 @@ import Image from "next/image";
 import Button from "./Button";
 import type { ReactNode } from "react";
 
+interface HeroImage {
+  src: string;
+  alt?: string;
+}
+
 interface HeroProps {
   title: string;
   subtitle: string;
   ctaLabel: string;
   ctaHref: string;
-  imageSrc: string;
-  imageAlt?: string;
+  images: HeroImage[];
   children?: ReactNode;
 }
 
@@ -24,8 +28,7 @@ export default function Hero({
   subtitle,
   ctaLabel,
   ctaHref,
-  imageSrc,
-  imageAlt = "",
+  images,
   children,
 }: HeroProps) {
   return (
