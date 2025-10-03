@@ -1,7 +1,7 @@
 // components/Hero.tsx
-import Image from 'next/image';
-import Button from './Button';
-import type { ReactNode } from 'react';
+import Image from "next/image";
+import Button from "./Button";
+import type { ReactNode } from "react";
 
 interface HeroProps {
   title: string;
@@ -25,11 +25,11 @@ export default function Hero({
   ctaLabel,
   ctaHref,
   imageSrc,
-  imageAlt = '',
+  imageAlt = "",
   children,
 }: HeroProps) {
   return (
-    <section className="relative overflow-hidden bg-muted">
+    <section className="relative overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 -z-10 h-full w-full">
         <Image

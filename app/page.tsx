@@ -46,7 +46,7 @@ export default function HomePage() {
         subtitle="Bridging personal stories and community action to ignite real‑world impact."
         ctaLabel="Book Me to Speak"
         ctaHref="/events"
-        imageSrc="/images/hero.png"
+        imageSrc="/images/sanfranbanner.png"
         imageAlt="Abstract background representing community connection"
       />
       {/* Core message */}
