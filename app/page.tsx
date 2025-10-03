@@ -46,8 +46,16 @@ export default function HomePage() {
         subtitle="Bridging personal stories and community action to ignite real‑world impact."
         ctaLabel="Book Me to Speak"
         ctaHref="/events"
-        imageSrc="/images/sanfranbanner.png"
-        imageAlt="Abstract background representing community connection"
+        images={[
+          { src: "/images/sanfranbanner.png", alt: "Oakland city street map" },
+          { src: "/images/dalycity.png", alt: "Daly city street map" },
+          {
+            src: "/images/excelsiorbanner.png",
+            alt: "Excelsior city street map",
+          },
+          { src: "/images/emeryvillebanner.png", alt: "Emeryville street map" },
+          { src: "/images/oaklandbanner.png", alt: "Oakland city street map" },
+        ]}
       />
       {/* Core message */}
       <Section>
