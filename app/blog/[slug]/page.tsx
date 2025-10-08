@@ -1,10 +1,10 @@
 // app/blog/[slug]/page.tsx
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import { posts } from '@/content/posts';
-import { buildMetadata } from '@/lib/seo';
-import { articleSchema } from '@/lib/schema';
-import Section from '@/components/Section';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { posts } from "@/content/posts";
+import { buildMetadata } from "@/lib/seo";
+import { articleSchema } from "@/lib/schema";
+import Section from "@/components/Section";
 
 interface Params {
   slug: string;
@@ -20,7 +20,7 @@ export function generateMetadata({ params }: { params: Params }): Metadata {
     title: post.title,
     description: post.excerpt,
     openGraph: {
-      type: 'article',
+      type: "article",
       title: post.title,
       description: post.excerpt,
     },
@@ -36,20 +36,22 @@ export default function BlogPostPage({ params }: { params: Params }) {
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
-    url: `${new URL('/', 'https://example.com').toString()}blog/${post.slug}`,
-    authorName: 'Adam Ferguson',
+    url: `${new URL("/", "https://example.com").toString()}blog/${post.slug}`,
+    authorName: "Larry C. Jones Jr.",
   });
   return (
     <>
       <Section>
         <article className="space-y-4">
           <header className="space-y-2">
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">{post.title}</h1>
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
+              {post.title}
+            </h1>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              {new Date(post.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
+              {new Date(post.date).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
               })}
             </p>
           </header>

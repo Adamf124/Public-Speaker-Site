@@ -1,15 +1,15 @@
 // app/layout.tsx
-import type { Metadata } from 'next';
-import './globals.css';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import { defaultMeta, siteName, baseUrl } from '@/lib/seo';
-import { organizationSchema, personSchema } from '@/lib/schema';
-import { Inter } from 'next/font/google';
+import type { Metadata } from "next";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { defaultMeta, siteName, baseUrl } from "@/lib/seo";
+import { organizationSchema, personSchema } from "@/lib/schema";
+import { Inter } from "next/font/google";
 
 // Load the Inter font with the default weights. The CSS variable will
 // automatically be applied to the root element via the className below.
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = defaultMeta;
 
@@ -19,29 +19,33 @@ export const metadata: Metadata = defaultMeta;
  * organization and person. An analytics placeholder is included as a comment
  * for future configuration.
  */
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const orgSchema = organizationSchema({
     name: siteName,
     url: baseUrl,
     logo: `${baseUrl}/images/og-default.png`,
     sameAs: [
-      'https://twitter.com',
-      'https://www.linkedin.com',
-      'https://www.instagram.com',
+      "https://twitter.com",
+      "https://www.linkedin.com",
+      "https://www.instagram.com",
     ],
   });
   const person = personSchema({
-    name: 'Adam Ferguson',
+    name: "Larry C. Jones Jr.",
     url: baseUrl,
-    jobTitle: 'Public Speaker & Community Advocate',
+    jobTitle: "Public Speaker & Community Advocate",
     sameAs: [
-      'https://twitter.com',
-      'https://www.linkedin.com',
-      'https://www.instagram.com',
+      "https://twitter.com",
+      "https://www.linkedin.com",
+      "https://www.instagram.com",
     ],
   });
   return (
-    <html lang="en" className={`${inter.variable} font-sans`}>        
+    <html lang="en" className={`${inter.variable} font-sans`}>
       <head>
         {/* Theme colors for light and dark modes */}
         <meta

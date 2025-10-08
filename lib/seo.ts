@@ -7,15 +7,15 @@ import type { Metadata } from 'next';
  * centralized makes it easy to adjust titles and descriptions in one place.
  */
 
-export const siteName = 'Adam Ferguson | Speaker & Advocate';
+export const siteName = 'Larry C. Jones Jr. | Speaker & Advocate';
 export const siteDescription =
-  'Inspiring change through personal stories and community action. Book Adam Ferguson for keynotes, workshops and events focused on dialogue, storytelling and measurable impact.';
+  'Inspiring change through personal stories and community action. Book Larry C. Jones Jr. for keynotes, workshops and events focused on dialogue, storytelling and measurable impact.';
 export const baseUrl = 'https://example.com'; // replace with the eventual production domain
 
 export const defaultMeta: Metadata = {
   title: {
     default: siteName,
-    template: `%s | Adam Ferguson`,
+    template: `%s | Larry C. Jones Jr.`,
   },
   description: siteDescription,
   openGraph: {

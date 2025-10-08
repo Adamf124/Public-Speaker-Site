@@ -30,7 +30,7 @@ export default function Navbar() {
           href="/"
           className="text-lg font-bold text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          Adam Ferguson
+          The Street Expert
         </Link>
         {/* Mobile menu button */}
         <button

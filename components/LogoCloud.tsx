@@ -15,7 +15,7 @@ interface LogoCloudProps {
 
 /**
  * A simple horizontal grid of logos. Used to showcase organizations or events
- * that Adam has been featured at. The images are rendered with next/image
+ * that Larry has been featured at. The images are rendered with next/image
  * for optimal performance.
  */
 export default function LogoCloud({

@@ -1,12 +1,12 @@
 // components/Footer.tsx
-import Link from 'next/link';
-import { footerLinks, socialLinks } from '@/content/config';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from "next/link";
+import { footerLinks, socialLinks } from "@/content/config";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faLinkedin,
   faInstagram,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
 const iconMap: Record<string, any> = {
   twitter: faTwitter,
@@ -44,7 +44,9 @@ export default function Footer() {
           ))}
           {/* Social column */}
           <div className="sm:col-span-2 md:col-span-1">
-            <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">Connect</h3>
+            <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+              Connect
+            </h3>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
               Follow along for updates, insights and behind‑the‑scenes stories.
             </p>
@@ -65,7 +67,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 border-t border-gray-200 pt-6 text-sm text-gray-500 dark:border-gray-700 dark:text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Adam Ferguson. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Larry C. Jones Jr.. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>

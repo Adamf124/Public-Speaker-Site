@@ -1,15 +1,15 @@
 // app/blog/page.tsx
-import { buildMetadata } from '@/lib/seo';
-import type { Metadata } from 'next';
-import Section from '@/components/Section';
-import BlogList from '@/components/BlogList';
-import { posts } from '@/content/posts';
-import CTA from '@/components/CTA';
+import { buildMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
+import Section from "@/components/Section";
+import BlogList from "@/components/BlogList";
+import { posts } from "@/content/posts";
+import CTA from "@/components/CTA";
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Blog',
+  title: "Blog",
   description:
-    'Insights, behind‑the‑scenes moments, and tools for making a difference. Read the latest articles by Adam Ferguson.',
+    "Insights, behind‑the‑scenes moments, and tools for making a difference. Read the latest articles by Larry C. Jones Jr..",
 });
 
 export default function BlogPage() {
@@ -17,9 +17,12 @@ export default function BlogPage() {
     <>
       <Section>
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100">Blog</h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100">
+            Blog
+          </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300">
-            Insights, behind‑the‑scenes moments, and tools for making a difference.
+            Insights, behind‑the‑scenes moments, and tools for making a
+            difference.
           </p>
         </div>
       </Section>

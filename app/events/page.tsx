@@ -1,15 +1,15 @@
 // app/events/page.tsx
-import { buildMetadata } from '@/lib/seo';
-import type { Metadata } from 'next';
-import Section from '@/components/Section';
-import EngagementCard from '@/components/EngagementCard';
-import BookingForm from '@/components/BookingForm';
-import { upcomingEvents } from '@/content/config';
+import { buildMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
+import Section from "@/components/Section";
+import EngagementCard from "@/components/EngagementCard";
+import BookingForm from "@/components/BookingForm";
+import { upcomingEvents } from "@/content/config";
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Events & Booking',
+  title: "Events & Booking",
   description:
-    'See upcoming events and book Adam Ferguson for your next conference, workshop or gathering.',
+    "See upcoming events and book Larry C. Jones Jr. for your next conference, workshop or gathering.",
 });
 
 export default function EventsPage() {
@@ -17,9 +17,12 @@ export default function EventsPage() {
     <>
       <Section>
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100">Events & Booking</h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100">
+            Events & Booking
+          </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300">
-            Join Adam at an upcoming event or begin the conversation about hosting your own.
+            Join Larry at an upcoming event or begin the conversation about
+            hosting your own.
           </p>
         </div>
       </Section>
@@ -36,7 +39,7 @@ export default function EventsPage() {
                 name={ev.name}
                 title={ev.name}
                 location={ev.location}
-                year={parseInt(ev.date.split('-')[0])}
+                year={parseInt(ev.date.split("-")[0])}
                 logo={ev.logo}
                 description={ev.description}
               />
@@ -47,9 +50,12 @@ export default function EventsPage() {
       {/* Booking form */}
       <Section>
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">Book Adam</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+            Book Larry
+          </h2>
           <p className="text-gray-700 dark:text-gray-300">
-            Let’s make an impact together. Fill out the form below to get started.
+            Let’s make an impact together. Fill out the form below to get
+            started.
           </p>
           <BookingForm />
         </div>

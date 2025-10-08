@@ -1,6 +1,6 @@
-# Adam Ferguson — Speaker & Community Advocate Website
+# Larry C. Jones Jr. — Speaker & Community Advocate Website
 
-This project is a fully functional website built with **Next.js 14**, **TypeScript** and **Tailwind CSS**. It showcases the work of public speaker and community advocate **Adam Ferguson**, including past engagements, speaking topics, case studies, a blog and a booking form.
+This project is a fully functional website built with **Next.js 14**, **TypeScript** and **Tailwind CSS**. It showcases the work of public speaker and community advocate **Larry Ferguson**, including past engagements, speaking topics, case studies, a blog and a booking form.
 
 ## Getting Started
 
@@ -55,11 +55,11 @@ public-speaker-site/
 
 ## Accessibility & SEO
 
-* Semantic HTML elements and ARIA attributes are used throughout the site.
-* A skip‑to‑content link is provided for keyboard users.
-* Focus rings are visible when navigating via keyboard.
-* Color choices meet WCAG AA contrast requirements.
-* Default metadata includes Open Graph and Twitter card support, and structured data (JSON‑LD) is embedded for the organization, person, events and articles.
+- Semantic HTML elements and ARIA attributes are used throughout the site.
+- A skip‑to‑content link is provided for keyboard users.
+- Focus rings are visible when navigating via keyboard.
+- Color choices meet WCAG AA contrast requirements.
+- Default metadata includes Open Graph and Twitter card support, and structured data (JSON‑LD) is embedded for the organization, person, events and articles.
 
 ## Customization
 
@@ -67,4 +67,4 @@ Colours, typography and spacing are controlled via CSS variables defined in `glo
 
 ## TODO
 
-* Integrate analytics (e.g. Google Analytics, Plausible) by inserting the appropriate script in `app/layout.tsx` where indicated.
+- Integrate analytics (e.g. Google Analytics, Plausible) by inserting the appropriate script in `app/layout.tsx` where indicated.
